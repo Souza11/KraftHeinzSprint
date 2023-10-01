@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         caixaTexto: formData4.get('caixaTexto')
       };
 
-      fetch('https//localhost/propostas', {
+      fetch('https://localhost/propostas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(data => {
         console.log(data);
+
+        form1.reset();
+        form2.reset();
+        form3.reset();
+        form4.reset();
       })
       .catch(error => {
         console.error('Erro:', error);
