@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/frontend/Style/Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kraft Heinz</title>
+  </head>
+  <body>
+    <div class="headerBody">
+      <img
+        src="/frontend/Images/Kraft_Heinz-Logo.wine.png"
+        alt=""
+        class="kraftHeinzIcon"
+      />
+      <div class="loginForm">
+        <h3>Deixe a gente conhecer <br />você</h3>
+        <h5>Aproveite e nos ajude a mudar o mundo!</h5>
+        <form
+          action="mailto:seuemail@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="nome"></label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="seu nome completo"
+          /><br />
+        </form>
+        <form action="">
+          <label for="proposta"></label><br />
+          <select name="tipoProposta" id="tipoProposta">
+            <option value="">Seleciona o tipo de proposta</option>
+            <option value="Environmental">Environmental</option>
+            <option value="Social">Social</option>
+            <option value="Governance">Governance</option>
+          </select>
+        </form>
+        <form action="processar_formulario.php" method="post">
+          <label for="estado"></label>
+          <select id="estado" name="estado">
+            <option value="">Selecione um estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <br />
+        </form>
+        <form action="processar_formulario.php" method="post">
+          <label for="caixaTexto"></label>
+          <input
+            type="text"
+            id="caixaTexto"
+            name="caixaTexto"
+            placeholder="Envie sua Proposta"
+          />
+          <br />
+        </form>
+        <button type="submit" class="buttonLogin">Enviar</button>
+      </div>
+    </div>
+  </body>
+</html>
