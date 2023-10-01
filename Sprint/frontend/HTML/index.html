@@ -26,6 +26,7 @@
           action="mailto:seuemail@example.com"
           method="post"
           enctype="text/plain"
+          id="form1"
         >
           <label for="nome"></label><br />
           <input
@@ -35,7 +36,7 @@
             placeholder="seu nome completo"
           /><br />
         </form>
-        <form action="">
+        <form action="" id="form2">
           <label for="proposta"></label><br />
           <select name="tipoProposta" id="tipoProposta">
             <option value="">Seleciona o tipo de proposta</option>
@@ -44,7 +45,7 @@
             <option value="Governance">Governance</option>
           </select>
         </form>
-        <form action="processar_formulario.php" method="post">
+        <form action="processar_formulario.php" method="post" id="form3">
           <label for="estado"></label>
           <select id="estado" name="estado">
             <option value="">Selecione um estado</option>
@@ -78,7 +79,7 @@
           </select>
           <br />
         </form>
-        <form action="processar_formulario.php" method="post">
+        <form action="processar_formulario.php" method="post" id="form4">
           <label for="caixaTexto"></label>
           <input
             type="text"
@@ -88,8 +89,11 @@
           />
           <br />
         </form>
-        <button type="submit" class="buttonLogin">Enviar</button>
+        <button type="submit" class="buttonLogin" id="botaoEnviar">Enviar</button>
       </div>
     </div>
+
+    <script src="/frontend/JS/scripts.js"></script>
   </body>
 </html>
+
